@@ -28,5 +28,15 @@ namespace csharp_calcolatrice
             double differenza = num1 - num2;
             return differenza;
         }
+        public static int MoltiplicazioneNumeriInt(int num1, int num2)
+        {
+            int moltiplicazione = num1 * num2;
+            return moltiplicazione;
+        }
+        public static double MoltiplicazioneNumeriDouble(double num1, double num2)
+        {
+            double moltiplicazione = num1 * num2;
+            return moltiplicazione;
+        }
     }
 }
