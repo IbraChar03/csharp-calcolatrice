@@ -18,5 +18,15 @@ namespace csharp_calcolatrice
             double somma = num1 + num2;
             return somma;
         }
+        public static int DifferenzaNumeriInt(int num1, int num2)
+        {
+            int differenza = num1 - num2;
+            return differenza;
+        }
+        public static double DifferenzaNumeriDouble(double num1, double num2)
+        {
+            double differenza = num1 - num2;
+            return differenza;
+        }
     }
 }
