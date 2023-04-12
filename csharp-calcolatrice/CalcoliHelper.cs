@@ -46,5 +46,21 @@ namespace csharp_calcolatrice
         {
             return Math.Abs(num);
         }
+        public static int MinInt(int num1,int num2)
+        {
+            return Math.Min(num1,num2);
+        }
+        public static double MinDouble(double num1,double num2)
+        {
+            return Math.Min(num1, num2);
+        }
+        public static int MaxInt(int num1, int num2)
+        {
+            return Math.Max(num1, num2);
+        }
+        public static double MaxDouble(double num1, double num2)
+        {
+            return Math.Max(num1, num2);
+        }
     }
 }
