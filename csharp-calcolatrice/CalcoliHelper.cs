@@ -56,10 +56,9 @@ namespace csharp_calcolatrice
         {
             if (num < 0)
             {
-                string numStringa = num.ToString();
-                string stringa = numStringa.Remove(0, 1);
-
-                return Double.Parse(stringa);
+                double nuovoNum = num * -1;
+      
+                return nuovoNum;
             }
             else
                 return num;
