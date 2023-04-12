@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(CalcoliHelper.SommaNumeri(2, 3));
         }
     }
 }
