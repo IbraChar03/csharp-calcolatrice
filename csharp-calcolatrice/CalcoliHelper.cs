@@ -105,13 +105,15 @@ namespace csharp_calcolatrice
         }
         //overloading
         public static double ElevamentoPotenza(int num1,int num2)
+
         {
+            if (num1 == 0)
+                num1 = 1;
+
+            else if (num2 == 0)
+                num2 = 1;
             double elevamento = num1;
-            if(num1 == 0)
-             num1 = 1;
-            
-            else if(num2 == 0)
-             num2 = 1;
+           
             for(int i = 1; i < num2 ; i++)
             {
                  elevamento *=  num1 ;
