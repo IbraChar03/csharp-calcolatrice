@@ -8,59 +8,60 @@ namespace csharp_calcolatrice
 {
     internal class CalcoliHelper
     {
-        public static int SommaNumeriInt(int num1, int num2)
+        public static int SommaNumeri(int num1, int num2)
         {
             int somma =  num1 + num2;
             return somma;
         }
-        public static double SommaNumeriDouble(double num1, double num2)
+        public static double SommaNumeri(double num1, double num2)
         {
             double somma = num1 + num2;
             return somma;
         }
-        public static int DifferenzaNumeriInt(int num1, int num2)
+        public static int DifferenzaNumeri(int num1, int num2)
         {
             int differenza = num1 - num2;
             return differenza;
         }
-        public static double DifferenzaNumeriDouble(double num1, double num2)
+        public static double DifferenzaNumeri(double num1, double num2)
         {
             double differenza = num1 - num2;
             return differenza;
         }
-        public static int MoltiplicazioneNumeriInt(int num1, int num2)
+        public static int MoltiplicazioneNumeri(int num1, int num2)
         {
             int moltiplicazione = num1 * num2;
             return moltiplicazione;
         }
-        public static double MoltiplicazioneNumeriDouble(double num1, double num2)
+        public static double MoltiplicazioneNumeri(double num1, double num2)
         {
             double moltiplicazione = num1 * num2;
             return moltiplicazione;
         }
-        public static int ValAssolutoInt(int num)
+        public static int ValAssoluto(int num)
         {
             return Math.Abs(num);
         }
-        public static double ValAssolutoDouble(double num)
+        public static double ValAssoluto(double num)
         {
             return Math.Abs(num);
         }
-        public static int MinInt(int num1,int num2)
+        public static int MinNum(int num1,int num2)
         {
             return Math.Min(num1,num2);
         }
-        public static double MinDouble(double num1,double num2)
+        public static double MinNum(double num1,double num2)
         {
             return Math.Min(num1, num2);
         }
-        public static int MaxInt(int num1, int num2)
+        public static int MaxNum(int num1, int num2)
         {
             return Math.Max(num1, num2);
         }
-        public static double MaxDouble(double num1, double num2)
+        public static double MaxNUm(double num1, double num2)
         {
             return Math.Max(num1, num2);
         }
+        //overloading
     }
 }
