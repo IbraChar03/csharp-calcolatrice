@@ -112,11 +112,24 @@ namespace csharp_calcolatrice
             else if (num2 == 0)
                 num2 = 1;
             double elevamento = num1;
-           
-            for(int i = 1; i < num2 ; i++)
+            if(num2 < 0)
             {
-                 elevamento *=  num1 ;
+                elevamento =1/num1;
+                num2 = num2 * -1;
+                for (int i = 1; i < num2; i++)
+                {
+                    elevamento *= num1;
+                }
             }
+            else
+            {
+              for(int i = 1; i < num2 ; i++)
+               {
+                 elevamento *=  num1 ;
+               }
+            }
+           
+           
             
             return elevamento;
         }
