@@ -111,21 +111,22 @@ namespace csharp_calcolatrice
 
             else if (num2 == 0)
                 num2 = 1;
-            double elevamento = num1;
+            double elevamento = 1;
+            double numBase = (double)num1;
             if(num2 < 0)
             {
-                elevamento =1/num1;
-                num2 = num2 * -1;
-                for (int i = 1; i < num2; i++)
+                numBase =1.0/numBase;
+                //num2 = num2 * -1;
+                for (int i = 0; i < ValAssoluto(num2); i++)
                 {
-                    elevamento *= num1;
+                    elevamento *= numBase;
                 }
             }
             else
             {
-              for(int i = 1; i < num2 ; i++)
+              for(int i = 0; i < ValAssoluto(num2); i++)
                {
-                 elevamento *=  num1 ;
+                 elevamento *=  numBase ;
                }
             }
            
