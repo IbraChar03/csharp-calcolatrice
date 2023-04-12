@@ -36,7 +36,7 @@ namespace csharp_calcolatrice
         public static double MoltiplicazioneNumeri(double num1, double num2)
         {
             double moltiplicazione = num1 * num2;
-            return moltiplicazione;
+            return Math.Round(moltiplicazione,2);
         }
         public static int ValAssoluto(int num)
         {
