@@ -38,5 +38,13 @@ namespace csharp_calcolatrice
             double moltiplicazione = num1 * num2;
             return moltiplicazione;
         }
+        public static int ValAssolutoInt(int num)
+        {
+            return Math.Abs(num);
+        }
+        public static double ValAssolutoDouble(double num)
+        {
+            return Math.Abs(num);
+        }
     }
 }
