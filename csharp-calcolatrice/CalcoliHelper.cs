@@ -36,42 +36,88 @@ namespace csharp_calcolatrice
         public static double MoltiplicazioneNumeri(double num1, double num2)
         {
             double moltiplicazione = num1 * num2;
-            return Math.Round(moltiplicazione,2);
+            return moltiplicazione;
         }
         public static int ValAssoluto(int num)
         {
-            return Math.Abs(num);
+          
+            if(num < 0)
+            {
+               string numStringa = num.ToString();
+              string stringa = numStringa.Remove(0, 1);
+                
+               return Int32.Parse(stringa);
+            }
+            else
+             return num;
+            
         }
         public static double ValAssoluto(double num)
         {
-            return Math.Abs(num);
+            if (num < 0)
+            {
+                string numStringa = num.ToString();
+                string stringa = numStringa.Remove(0, 1);
+
+                return Double.Parse(stringa);
+            }
+            else
+                return num;
         }
         public static int MinNum(int num1,int num2)
         {
-            return Math.Min(num1,num2);
+            if (num1 < num2)
+
+                return num1;
+
+            else 
+                return num2;
+           
+           
+           
         }
         public static double MinNum(double num1,double num2)
         {
-            return Math.Min(num1, num2);
+            if (num1 < num2)
+
+                return num1;
+
+            else
+                return num2;
         }
         public static int MaxNum(int num1, int num2)
         {
-            return Math.Max(num1, num2);
+            if (num1 > num2)
+
+                return num1;
+
+            else
+                return num2;
         }
         public static double MaxNUm(double num1, double num2)
         {
-            return Math.Max(num1, num2);
+            if (num1 > num2)
+
+                return num1;
+
+            else
+                return num2;
         }
         //overloading
         public static double ElevamentoPotenza(int num1,int num2)
         {
+            double elevamento = num1;
             if(num1 == 0)
              num1 = 1;
             
             else if(num2 == 0)
              num2 = 1;
+            for(int i = 1; i < num2 ; i++)
+            {
+                 elevamento *=  num1 ;
+            }
             
-            return Math.Pow(num1,num2);
+            return elevamento;
         }
        
     }

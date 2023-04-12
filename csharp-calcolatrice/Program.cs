@@ -14,7 +14,7 @@
             Console.WriteLine($"Il valore assoluto è {CalcoliHelper.ValAssoluto(-42.5)}");
             Console.WriteLine($"Il numero più piccolo è {CalcoliHelper.MinNum(23,28)}");
             Console.WriteLine($"Il numero più grande è {CalcoliHelper.MaxNum(12, 17)}");
-            Console.WriteLine($"L`elevamento a potenza è {CalcoliHelper.ElevamentoPotenza(0, 0)}");
+            Console.WriteLine($"L`elevamento a potenza è {CalcoliHelper.ElevamentoPotenza(4, 8)}");
         }
     }
 }
